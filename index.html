@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía del Juego - Poker Stats Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Poker Stats Calculator</h1>
+        <nav>
+            <a href="#reglas-poker">Reglas de Póker</a>
+            <a href="#reglas-juego">Cómo Jugar</a>
+            <a href="#matematicas">Matemáticas y Estrategia</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="reglas-poker">
+            <h2>1. Reglas de Póker (Ranking de Manos)</h2>
+            <p>El objetivo del Texas Hold'em es formar la mejor mano posible de cinco cartas, utilizando tus dos cartas privadas y las cinco cartas comunitarias de la mesa.</p>
+            <div class="hand-ranking-grid">
+                <div class="hand-card"><h3>1. Escalera Real de Color</h3><div class="hand-image">Imagen de Escalera Real</div><p>Las cinco cartas más altas (A-K-Q-J-T) del mismo palo. Es la mejor mano posible.</p></div>
+                <div class="hand-card"><h3>2. Escalera de Color</h3><div class="hand-image">Imagen de Escalera de Color</div><p>Cinco cartas en secuencia numérica y del mismo palo.</p></div>
+                <div class="hand-card"><h3>3. Póker</h3><div class="hand-image">Imagen de Póker</div><p>Cuatro cartas del mismo valor.</p></div>
+                <div class="hand-card"><h3>4. Full House</h3><div class="hand-image">Imagen de Full House</div><p>Un trío y una pareja.</p></div>
+                <div class="hand-card"><h3>5. Color</h3><div class="hand-image">Imagen de Color</div><p>Cinco cartas del mismo palo, sin importar el orden.</p></div>
+                <div class="hand-card"><h3>6. Escalera</h3><div class="hand-image">Imagen de Escalera</div><p>Cinco cartas en secuencia numérica de distintos palos.</p></div>
+                <div class="hand-card"><h3>7. Trío</h3><div class="hand-image">Imagen de Trío</div><p>Tres cartas del mismo valor.</p></div>
+                <div class="hand-card"><h3>8. Doble Pareja</h3><div class="hand-image">Imagen de Doble Pareja</div><p>Dos pares de cartas diferentes.</p></div>
+                <div class="hand-card"><h3>9. Pareja</h3><div class="hand-image">Imagen de Pareja</div><p>Dos cartas del mismo valor.</p></div>
+                <div class="hand-card"><h3>10. Carta Alta</h3><div class="hand-image">Imagen de Carta Alta</div><p>Si ningún jugador tiene nada de lo anterior, gana quien tenga la carta más alta.</p></div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="reglas-juego">
+            <h2>2. Reglas del Juego (El Flujo de una Mano)</h2>
+            <p>Una mano de Texas Hold'em se desarrolla en hasta cuatro rondas de apuestas, conocidas como "calles".</p>
+            <div class="game-flow">
+                <div class="flow-step">
+                    <h4>Pre-Flop</h4>
+                    <p>Recibes tus dos cartas privadas. Hay una ronda de apuestas.</p>
+                </div>
+                <div class="flow-step">
+                    <h4>Flop</h4>
+                    <p>Se revelan las primeras tres cartas comunitarias. Sigue otra ronda de apuestas.</p>
+                </div>
+                <div class="flow-step">
+                    <h4>Turn</h4>
+                    <p>Se revela la cuarta carta comunitaria. Hay una nueva ronda de apuestas.</p>
+                </div>
+                <div class="flow-step">
+                    <h4>River</h4>
+                    <p>Se revela la quinta y última carta comunitaria, seguida de la ronda final de apuestas.</p>
+                </div>
+                <div class="flow-step">
+                    <h4>Showdown</h4>
+                    <p>Si quedan jugadores, muestran sus cartas. El que tenga la mejor mano gana el bote.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="matematicas">
+            <h2>3. La Importancia de las Matemáticas en el Póker</h2>
+            <p>El póker no es solo un juego de azar; es un juego de información incompleta donde la probabilidad y la estadística son fundamentales. Tomar decisiones basadas en las matemáticas separa a los jugadores ganadores de los perdedores a largo plazo.</p>
+            
+            <h3>El Calculador de Probabilidades</h3>
+            <p>La característica principal de esta aplicación es el círculo de porcentaje. Este número representa tu **equity**: la probabilidad porcentual que tienes de ganar la mano si se jugara hasta el final. Este cálculo no es una simple suposición; la app realiza miles de simulaciones (Montecarlo) o cálculos exactos (Enumeración) por segundo para estimar tu ventaja contra el rango de manos probable de tu oponente, dándote una herramienta objetiva para decidir si apostar, pasar o retirarte.</p>
+
+            <h3>La IA Adaptativa</h3>
+            <p>El oponente de esta aplicación también usa las matemáticas. No es un bot con reglas fijas, sino una IA que te analiza. Rastrea tu estilo de juego (el porcentaje de manos que juegas, tu agresividad, etc.) y ajusta su estrategia para explotar tus tendencias. Si juegas de forma muy conservadora, te respetará más; si juegas de forma muy agresiva, intentará tenderte trampas. Esto simula cómo un jugador real se adapta a sus rivales en la mesa.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado como parte de un Trabajo de Fin de Grado.</p>
+    </footer>
+
+</body>
+</html>
