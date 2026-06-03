@@ -80,12 +80,14 @@ hr {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
 }
 
+/* 🔥 GRID DE MANOS */
 .hand-ranking-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
+/* 🃏 CARTA */
 .hand-card {
     background-color: var(--surface-color);
     padding: 20px;
@@ -100,18 +102,23 @@ hr {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
+/* 🖼️ IMÁGENES (ARREGLADO AQUÍ ESTABA EL PROBLEMA) */
 .hand-image {
-    background-color: #333;
-    height: 80px;
-    border-radius: 4px;
     margin: 10px 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-style: italic;
-    color: #888;
+    align-items: center;
 }
 
+.hand-image img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+/* 🎲 FLUJO DE JUEGO */
 .game-flow {
     display: flex;
     flex-wrap: wrap;
@@ -131,6 +138,7 @@ hr {
     color: var(--primary-color);
 }
 
+/* 🦶 FOOTER */
 footer {
     text-align: center;
     padding: 20px;
